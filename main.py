@@ -1,6 +1,8 @@
 import asyncio
 import sys
 import os
+import truststore
+truststore.inject_into_ssl()
 from dotenv import load_dotenv
 from contextlib import AsyncExitStack
 
